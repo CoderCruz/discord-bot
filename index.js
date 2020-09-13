@@ -1,13 +1,13 @@
 const Discord = require("discord.js");
 
+const config = require('./config.json');
 const bot = new Discord.Client();
-const token = 'NzU0NTY3NDY0NzgzNzA4MTgw.X12ntg.LFL7OAIcrYTk7Wx6TCvudhG4RBo'
 
 bot.on('ready', () => {
   console.log('bot is ready')
 })
 
-bot.login(token)
+bot.login(config.token)
 
 const prefix = '!'
 
